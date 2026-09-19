@@ -59,10 +59,10 @@ class TalkerGrpcLogger extends ClientInterceptor {
   }) {
     _talker = talker ?? Talker();
     _talker.settings.registerKeys([
-      TalkerKey.grpcEvent,
-      TalkerKey.grpcRequest,
-      TalkerKey.grpcResponse,
-      TalkerKey.grpcError,
+      'grpc-event',
+      'grpc-request',
+      'grpc-response',
+      'grpc-error',
     ]);
   }
 
